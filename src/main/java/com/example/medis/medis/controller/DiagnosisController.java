@@ -35,8 +35,7 @@ public class DiagnosisController {
         }
         else {
              diagnosisRepo.save(diagnosis);
-            System.out.println(diagnosis.toString() + "lkdjkadjkdkljkjkjkjkh");
-            return new ResponseEntity<>("Record save successfully", HttpStatus.OK);
+            return new ResponseEntity<>("Record saved successfully", HttpStatus.OK);
         }
 
     }
